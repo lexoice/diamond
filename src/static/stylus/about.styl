@@ -4,30 +4,29 @@
 	display -ms-flex
 	display -o-flex
 	display flex
-	justify-content space-between
-	position relative
-	&:before
-		content ' '
-		display block
-		width 3px
-		height 445px;
-		position absolute
-		right 0
-		top 125px;
-		background #af8554
-	&:after
-		content ' '
-		display block
-		width 530px
-		height 3px
-		position absolute
-		right 0
-		bottom 80px
-		background #af8554
 	&__photo
+		width 49%
+	&__desc
+		width 49%
 		position relative
-		top -75px
-		padding-right 100px
+		&:before
+			content ' '
+			display block
+			width 3px
+			height 445px;
+			position absolute
+			right 0
+			top 125px;
+			background #af8554
+		&:after
+			content ' '
+			display block
+			width 530px
+			height 3px
+			position absolute
+			right 0
+			bottom 80px
+			background #af8554
 	&__title
 		color #109a8c
 		font-size 30px
