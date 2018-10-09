@@ -1,0 +1,100 @@
+.about
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content space-between
+	position relative
+	&:before
+		content ' '
+		display block
+		width 3px
+		height 445px;
+		position absolute
+		right 0
+		top 125px;
+		background #af8554
+	&:after
+		content ' '
+		display block
+		width 530px
+		height 3px
+		position absolute
+		right 0
+		bottom 80px
+		background #af8554
+	&__photo
+		position relative
+		top -75px
+		padding-right 100px
+	&__title
+		color #109a8c
+		font-size 30px
+		line-height 24px
+		font-weight normal
+		position relative
+		&:before
+			content: '';
+			background: #af8554;
+			width: 120px;
+			height: 3px;
+			position: absolute;
+			bottom: -30px;
+	&__sub-title
+		color #404040
+		font-size 44px
+		line-height 24px
+		padding-top 20px
+	&__text
+		font-size 18px
+		line-height 24px
+		padding-right 120px
+	&__list
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content flex-start
+		padding 0
+		& li
+			margin-right 60px
+			font-family 'Proxima Nova Sm'
+			&:before
+				content ''
+				background url(../img/dot.png)
+				width 13px
+				height 13px
+				margin-right 8px
+				display inline-block
+
+
+	&__futures
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		padding-left 90px
+		padding-right 90px
+		list-style-type none
+		justify-content space-between
+		margin-top 90px
+		margin-bottom 90px
+		text-align center
+		font-family 'Gotham Pro'
+		font-size 24px
+		line-height 24px
+		color #404040
+		& strong
+			display block
+			font-size 48px
+			line-height 48px
+			font-weight bold
+
+
+
+
+
+

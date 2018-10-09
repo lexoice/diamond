@@ -1,0 +1,84 @@
+.hero
+	background url(../img/hero.jpg) center
+	height 627px
+	margin-top -24px
+	&__desc
+		width 560px
+		font-family 'Gotham Pro'
+		color #404040
+	&__title
+		padding-top 90px
+		font-size 45px
+		line-height 48px
+		position relative
+		&:before
+			content ''
+			background #af8554
+			width 220px
+			height 3px
+			position absolute
+			bottom -20px
+		&--sub
+			font-weight 800
+			font-style 42px
+			line-height 48px
+		& b
+			font-weight normal
+		&--price
+			color #109a8c
+			font-weight 800
+			
+	&__text
+		color #404040
+		font-weight 500
+		font-size 28px
+		line-height 36px
+	&__items
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-between
+		margin-bottom 30px
+	&__item
+		list-style none
+		font-family 'Proxima Nova'
+		font-weight bold
+		font-size 16px
+		line-height 16px
+		color #404040
+		position relative
+		margin-bottom 16px
+		&:before
+			content ' '
+			position absolute
+			left -38px
+			width 30px
+			height 3px
+			background grey
+		&:after
+			content ' '
+			display block
+			width 90px
+			height 3px
+			position relative
+			bottom -3px
+			left 1px
+			background #c5a96f
+	&__ico1:before
+		background url(../img/u-item.png)
+		width 35px
+		height 32px
+	&__ico2:before
+		background url(../img/u-item2.png)
+		width 32px
+		height 30px
+		left -38px
+		top 3px
+	&__ico3:before
+		background url(../img/u-item3.png)
+		width 28px
+		height 28px
+		left -38px
+		top 3px

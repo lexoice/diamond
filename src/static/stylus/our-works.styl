@@ -1,0 +1,53 @@
+.our-works
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content space-between
+	padding-top 90px
+	padding-bottom 90px
+	&__slider
+		margin auto
+		margin-right 90px
+	&__desc
+		margin-top 90px
+	&__title
+		color #0b998d
+		font-size 30px
+		line-height 30px
+		font-weight normal
+		position relative
+		&:before
+			content: '';
+			background: #af8554;
+			width: 70px;
+			height: 3px;
+			position: absolute;
+			bottom: -40px;
+	&__sub-title
+		color #404040
+		font-size 44px
+		line-height 24px
+		padding-top 40px
+	&__text
+		margin-right 90px
+		font-style 18px
+		line-height 24px
+
+.slider__tabs
+	list-style none
+	padding 0
+	& li
+		display inline-block
+		color #c5a96f
+		font-family 'Proxima Nova Sm'
+		font-size 18px
+		border 1px solid #c5a96f
+		border-radius 3px
+		padding 6px 11px
+		margin-right 20px
+		cursor pointer
+	&--active
+		color #fff !important
+		background #c5a96f

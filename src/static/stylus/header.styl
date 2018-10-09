@@ -1,0 +1,86 @@
+.header
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	align-items flex-end
+	&__adress
+		position relative
+		&:before
+			content ''
+			display block
+			width 22px
+			height 31px
+			position absolute
+			left -31px
+			top 5px
+			background url(../img/gtag.png)
+		&--info
+			position relative
+			&:before
+				content ' '
+				display block
+				width 37px
+				height 31px
+				position absolute
+				left -47px
+				top 5px
+				background url(../img/subway.png)
+	&__phone
+		&--number 
+			text-decoration none
+			font-size 24px
+			font-family 'Proxima Nova Th'
+			color #414646
+		&--callback
+			display block
+			font-weight bold
+			text-decoration none
+			color #b5995e
+
+.menu
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content space-between
+	margin-top 12px
+	padding-top 6px
+	box-shadow 0 0 10px rgba(0,0,0,0.3)
+	&__list
+		& li
+			display inline-block
+			padding-right 22px
+		& a
+			color #343434
+	&__soc
+		margin-right 21px
+		& li
+			display inline-block
+		& a
+			display inline-block
+			border-radius 24px
+			width 23px
+			height 23px
+		&--fb
+			background url(../img/fb.png)
+		&--vk
+			background url(../img/vk.png)
+		&--inst
+			background url(../img/inst.png)
+
+.btn
+	font-family: 'Proxima Nova Sm'
+	text-transform uppercase
+	color #fff
+	font-size 16px
+	line-height 48px
+	padding 12px 18px
+	border-radius 5px
+	text-decoration none
+	background #3aaa9b
+	background linear-gradient(145deg, #41aea1, #0d998d)
