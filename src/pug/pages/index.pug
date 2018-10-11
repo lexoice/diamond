@@ -4,24 +4,25 @@ head
 	meta(charset="UTF-8")
 	meta(name="viewport", content="width=device-width")
 	title Главная старница
+	link(rel="stylesheet", href="static/css/bootstrap-grid.css")
 	link(rel="stylesheet", href="static/css/main.css")
 	link(rel="stylesheet", href="static/fonts/Gotham Cyrillic/font.css")
+	link(rel="stylesheet", type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+
 body
 	.wrapper
 		include .././inc/header.pug
 		include .././inc/hero.pug
 		include .././inc/about.pug
-		section.master
 		include .././inc/our-works.pug
-	
-	include .././inc/features.pug
-	include .././inc/form.pug
-	include .././inc/services.pug
-	section.master
-	include .././inc/form.pug
-	include .././inc/footer.pug
+		include .././inc/features.pug
+		include .././inc/form.pug
+		include .././inc/services.pug
+	//- section.master
+	//- include .././inc/form.pug
+	//- include .././inc/footer.pug
+script(src="https://code.jquery.com/jquery-3.3.1.min.js", integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=", crossorigin="anonymous")
 
+script(type="text/javascript", src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
 
-
-
-
+script(type="text/javascript", src="/static/js/main.js")

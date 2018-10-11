@@ -4,13 +4,15 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width"/>
   <title>Главная старница</title>
+  <link rel="stylesheet" href="static/css/bootstrap-grid.css"/>
   <link rel="stylesheet" href="static/css/main.css"/>
   <link rel="stylesheet" href="static/fonts/Gotham Cyrillic/font.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
   <div class="wrapper">
     <header class="header"><img class="header__logo" src="/static/img/logo.png" alt="Diamod tatoo"/><span class="header__adress">г. Москва, ул. 2-я Тверская Ямская, д. 18 <br> “Деловой Центр”, офис 606-607</span><span class="header__adress--info">ст.м. Маяковская, <br> От метро “0” минут!</span>
-      <div class="header__phone"><a class="header__phone--number" href="#">+7 968 49 49 52</a><a class="header__phone--callback" href="#">Заказать обратный звонок</a></div>
+      <div class="header__phone"><a class="header__phone--number" href="#">+7 968 49 49 452</a><a class="header__phone--callback" href="#">Заказать обратный звонок</a></div>
     </header>
     <nav class="menu">
       <ul class="menu__list">
@@ -29,26 +31,28 @@
     </nav>
     <div class="hero">
       <div class="hero__desc">
-        <h1 class="hero__title"><strong class="hero__title--sub">Перманентный макияж </strong><b>безупречного качества в Москве </b><small class="hero__title--price">от 3000 р.</small></h1>
+        <h1 class="hero__title"><span class="hero__title--sub">Перманентный макияж </span><b>безупречного качества в Москве </b><span class="hero__title--price">от 3000 р.</span></h1>
         <p class="hero__text">Работаем профессионально со всеми и индивидуально с каждым</p>
         <ul class="hero__items">
           <li class="hero__item hero__ico1">Идеальный <br> макияж на 2 года</li>
           <li class="hero__item hero__ico2">Сертифиированное <br>обордование</li>
           <li class="hero__item hero__ico3">Новейшие <br> технологии</li>
-        </ul><a class="btn" href="#">Записаться на консультацию</a>
+        </ul><a class="hero__btn btn" href="#">Записаться на консультацию</a>
       </div>
     </div>
     <section class="about" id="about">
       <div class="about__photo"><img src="static/img/l.jpg" alt=""/></div>
-      <div class="about__desc">
+      <div class="about__wrapper">
         <h3 class="about__title">Нам доверяют звезды ТВ!</h3>
-        <h2 class="about__sub-title">О компании</h2>
-        <ul class="about__list">
-          <li>Безупречно</li>
-          <li>Безопасно</li>
-          <li>Качественно</li>
-        </ul>
-        <p class="about__text">Студия Diamond Tattoo Studio в Москве приглашает вас на люксовый, безболезненный, безопасный, максимально натуральный и стойкий перманентный макияж. <br> Лидия Садчикова - руководитель студии с опытом работы более 8 лет, имеет высшее медицинское образование. участник чемпионатов, призер, преподаватель, член Лиги профессионалов, опыт работы Лидии и отзывы клиентов говорят сами за себя. Нам доверяют даже звезды ТВ!</p>
+        <div class="about__desc">
+          <h2 class="about__sub-title">О компании</h2>
+          <ul class="about__list">
+            <li>Безупречно</li>
+            <li>Безопасно</li>
+            <li>Качественно</li>
+          </ul>
+          <p class="about__text">Студия Diamond Tattoo Studio в Москве приглашает вас на люксовый, безболезненный, безопасный, максимально натуральный и стойкий перманентный макияж.<br> Лидия Садчикова - руководитель студии с опытом работы более 8 лет, имеет высшее медицинское образование. участник чемпионатов, призер, преподаватель, член Лиги профессионалов, опыт работы Лидии и отзывы клиентов говорят сами за себя. Нам доверяют даже звезды ТВ!</p>
+        </div>
       </div>
     </section>
     <ul class="about__futures">
@@ -56,115 +60,150 @@
       <li><strong>30+</strong> учеников, которые<br> прошли обучение</li>
       <li><strong>10 000+</strong> успешных работ</li>
     </ul>
-    <section class="master"></section>
     <section class="our-works">
-      <div class="our-works__slider">
-        <ul class="slider__tabs">
-          <li class="slider__tabs--active">Брови</li>
-          <li>Глаза</li>
-          <li>Губы</li>
+      <ul class="our-works__tab">
+        <li>Брови</li>
+        <li>Глаза</li>
+        <li class="our-works__tab--active">Губы</li>
+        <div class="our-works__wrapper">
+          <div class="our-works__slider">
+            <div class="slider"><img src="/static/img/w.jpg" alt=""/><img src="/static/img/works.jpg" alt=""/><img src="/static/img/works.jpg" alt=""/></div>
+          </div>
+          <div class="our-works__desc">
+            <h3 class="our-works__title">Косметология высшего уровня с заботой о вашем здоровье</h3>
+            <h2 class="our-works__sub-title">Наши работы</h2>
+            <p class="our-works__text">Перманентный макияж от Diamond Tattoo Studio — процедура, выполняемая мастерами с медицинским образованием, которая позволяет получить все преимущества декоративного макияжа на несколько лет. Мы подберем для вас идеальное колористическое и декоративное решение. Поэтому перед тем, как определиться с техникой нанесения, учитывайте советы и рекомендации мастера.</p>
+          </div>
+        </div>
+      </ul>
+    </section>
+    <section class="features">
+      <div class="features__wrapper"><img class="features__img" src="/static/img/logo2.png" alt=""/>
+        <h2 class="features__title">Основные преимущества <br>перманентного макияжа</h2>
+        <ul class="features__list">
+          <li class="features__item1">Реальная альтернатива «люксовым» продуктам для макияжа. <br> Татуаж выглядит очень естественно и «дорого»</li>
+          <li class="features__item2">Создание яркого образа без необходимости ежедневного <br> макияжа с использованием косметики</li>
+          <li class="features__item3">Коррекция цвета и формы бровей </li>
+          <li class="features__item4">Выразительный взгляд с помощью стрелок в различных <br> техниках и заполнения межресничного пространства.</li>
+          <li class="features__item5">“Идеальные”губы - коррекция ассиметрии, <br> акцент на контуре, изменение цвета губ.</li>
         </ul>
-        <div class="slider"><img src="/static/img/works.jpg" alt=""/></div>
       </div>
-      <div class="our-works__desc">
-        <h3 class="our-works__title">Косметология высшего уровня с заботой о вашем здоровье</h3>
-        <h2 class="our-works__sub-title">Наши работы</h2>
-        <p class="our-works__text">Перманентный макияж от Diamond Tattoo Studio — процедура, выполняемая мастерами с медицинским образованием, которая позволяет получить все преимущества декоративного макияжа на несколько лет. Мы подберем для вас идеальное колористическое и декоративное решение. Поэтому перед тем, как определиться с техникой нанесения, учитывайте советы и рекомендации мастера.</p>
+      <div class="features__pic-wrap"><img class="features__pic" src="static/img/fpic.jpg" alt=""/></div>
+    </section>
+    <section class="wrapper form">
+      <h2>Спешите записаться на процедуру перманентного макияжа <small class="form__sub-title">со скидкой 20%</small></h2>
+      <form>
+        <input type="text" placeholder="Ваше имя*"/>
+        <input type="text" placeholder="Номер телефона*"/>
+        <button>Хочу записаться</button>
+      </form>
+    </section>
+    <section class="wrapper services">
+      <h2 class="services__title--main">Наши услуги</h2>
+      <div class="services__items">
+        <div class="services__text">
+          <div class="services__text--wrapper">
+            <h3 class="services__title">Татуаж бровей</h3>
+            <ul class="services__list">
+              <li><b>Пиксельное напыление<b> - создает эффект неброского дневного макияжа</li>
+              <li><b>Имитация волосков</b> - зрительно делает брови более густыми.</li>
+              <li><b>Теневая растушевка</b> - эффекта брови, подведенной карандашом</li>
+              <li><b>Пудровые брови</b> - максимально мягкий, естественный эффект</li>
+            </ul><a class="btn" href="">Бесплтаная консультация</a>
+          </div>
+        </div>
+        <div class="services__pic services__pic--item1"></div>
+      </div>
+      <div class="services__items">
+        <div class="services__pic services__pic--item2"></div>
+        <div class="services__text">
+          <div class="services__text--wrapper">
+            <h3 class="services__title">Перманентный макияж век</h3>
+            <ul class="services__list">
+              <li>Классическая стрелочка - создает эффект подкрашивания лайнером</li>
+              <li>Мягкая стрелка - придает взгляду глубину и выразительность</li>
+              <li>Стрелка с растушевкой - готовый макияж, с использованием цвета</li>
+              <li>Заполнение межресничного пространства - зрительно делает ресницы гуще</li>
+            </ul><a class="btn" href="">Бесплтаная консультация</a>
+          </div>
+        </div>
+      </div>
+      <div class="services__items">
+        <div class="services__text">
+          <div class="services__text--wrapper">
+            <h3 class="services__title">Перманентный макияж губ</h3>
+            <ul class="services__list">
+              <li>Контрур и контур с растушевкой - позволит создать идеальную форму ваших губ</li>
+              <li>Плотное заполнение - имитирует эффект стойкой помады</li>
+              <li>Акварельная техника - позволяет создать нежный и естественный образ</li>
+              <li>3D - cложная техника для ярко выраженной объемности губ</li>
+              <li>Пудровые губы - позволяет добиться уникального визуального эффекта</li>
+            </ul><a class="btn" href="">Бесплтаная консультация</a>
+          </div>
+        </div>
+        <div class="services__pic services__pic--item3"></div>
+      </div>
+      <div class="services__items">
+        <div class="services__pic services__pic--item4"></div>
+        <div class="services__text">
+          <div class="services__text--wrapper">
+            <h3 class="services__title">Перманентный макияж ареол</h3>
+            <ul class="services__list">
+              <li>Одна из самых сложных процедур,  которая требует навыков и опыта мастера</li>
+              <li>Показан женщинам, у которых были оперативные вмешательства на груди</li>
+              <li>Позволяет скрыть заметную асимметрию и подкорректировать форму ареолы</li>
+              <li>Позволяет сделать ареолы груди более выразительными и сексуальными</li>
+            </ul><a class="btn" href="">Бесплтаная консультация</a>
+          </div>
+        </div>
+      </div>
+      <div class="services__items">
+        <div class="services__text">
+          <div class="services__text--wrapper">
+            <h3 class="services__title">Удаление татуажа и татуировок</h3>
+            <ul class="services__list">
+              <li>Лазерное удаление некачественного перманентного макияжа</li>
+              <li>Лазерное удаление татуировок</li>
+              <li>Удаление перманентного макияжа или  татуировок с помощью  ремувера</li>
+            </ul><a class="btn" href="">Бесплтаная консультация</a>
+          </div>
+        </div>
+        <div class="services__pic services__pic--item5"></div>
+      </div>
+      <div class="services__items">
+        <div class="services__pic services__pic--item6"></div>
+        <div class="services__text">
+          <div class="services__text--wrapper">
+            <h3 class="services__title">BB Glow - эффект тонального крема</h3>
+            <ul class="services__list">
+              <li>Эффект лёгкого тонального крема на год</li>
+              <li>Осветление пигментации (Следы постакнэ/ Пигментные пятна/ Купероз/ Веснуш­ки)</li>
+              <li>Разглаживание мелких мимических морщинок</li>
+              <li>Увлажнение и обновление кожи</li>
+              <li>Камуфлирование тёмных кругов под глазами</li>
+            </ul><a class="btn" href="">Бесплтаная консультация</a>
+          </div>
+        </div>
+      </div>
+      <div class="services__items">
+        <div class="services__text services__items--last">
+          <div class="services__text--wrapper">
+            <h3 class="services__title">Карбоновый пиллинг</h3>
+            <ul class="services__list">
+              <li>Очищение кожи, улучшение цвета и выравнивание тона</li>
+              <li>Уничтожение патогенной микрофлоры</li>
+              <li>Синтез коллагеновых и эластичных волокон</li>
+              <li>Стерилизующее и бактерицидное действие на кожу, профилактика акне</li>
+              <li>Нормализация липидного баланса кожи</li>
+              <li>Активация регенерации клеток глубоких слоёв кожи</li>
+            </ul><a class="btn" href="">Бесплтаная консультация</a>
+          </div>
+        </div>
+        <div class="services__pic services__pic--item7"></div>
       </div>
     </section>
   </div>
-  <section class="wrapper features"><img src="/static/img/logo2.png" alt=""/>
-    <h2>Основные преимущества перманентного макияжа</h2>
-    <ul>
-      <li>Реальная альтернатива «люксовым» продуктам для макияжа. Татуаж выглядит очень естественно и «дорого»</li>
-      <li>Создание яркого образа без необходимости ежедневного макияжа с использованием косметики</li>
-      <li>Коррекция цвета и формы бровей </li>
-      <li>Выразительный взгляд с помощью стрелок в различных техниках и заполнения межресничного пространства.</li>
-      <li>“Идеальные”губы - коррекция ассиметрии, акцент на контуре, изменение цвета губ.</li>
-    </ul>
-  </section>
-  <section class="wrapper form">
-    <h2>Спешите записаться на процедуру перманентного макияжа <small class="hero__title--price">со скидкой 20%</small></h2>
-    <form>
-      <input type="text" placeholder="Ваше имя*"/>
-      <input type="text" placeholder="Номер телефона*"/>
-      <button>Хочу записаться</button>
-    </form>
-  </section>
-  <section class="wrapper services">
-    <h2 class="services__title--main">Наши услуги</h2>
-    <div class="services__items">
-      <div class="services__text">
-        <h3 class="services__title">Татуаж бровей</h3>
-        <ul class="services__list">
-          <li>Теневая растушевка</li>
-          <li>Пиксельное напыление</li>
-          <li>Имитация натуральных волосков</li>
-          <li>Пудровые брови</li>
-        </ul><a class="btn" href="">Бесплтаная консультация</a>
-      </div><img class="services__pic" src="/static/img/service.png" alt=""/>
-    </div>
-    <div class="services__items"><img class="services__pic" src="/static/img/service.png" alt=""/>
-      <div class="services__text right">
-        <h3 class="services__title">Татуаж бровей</h3>
-        <ul class="services__list">
-          <li>Теневая растушевка</li>
-          <li>Пиксельное напыление</li>
-          <li>Имитация натуральных волосков</li>
-          <li>Пудровые брови</li>
-        </ul><a class="btn" href="">Бесплтаная консультация</a>
-      </div>
-    </div>
-    <div class="services__items">
-      <div class="services__text">
-        <h3 class="services__title">Татуаж бровей</h3>
-        <ul class="services__list">
-          <li>Теневая растушевка</li>
-          <li>Пиксельное напыление</li>
-          <li>Имитация натуральных волосков</li>
-          <li>Пудровые брови</li>
-        </ul><a class="btn" href="">Бесплтаная консультация</a>
-      </div><img class="services__pic" src="/static/img/service.png" alt=""/>
-    </div>
-    <div class="services__items"><img class="services__pic" src="/static/img/service.png" alt=""/>
-      <div class="services__text right">
-        <h3 class="services__title">Татуаж бровей</h3>
-        <ul class="services__list">
-          <li>Теневая растушевка</li>
-          <li>Пиксельное напыление</li>
-          <li>Имитация натуральных волосков</li>
-          <li>Пудровые брови</li>
-        </ul><a class="btn" href="">Бесплтаная консультация</a>
-      </div>
-    </div>
-    <div class="services__items">
-      <div class="services__text">
-        <h3 class="services__title">Татуаж бровей</h3>
-        <ul class="services__list">
-          <li>Теневая растушевка</li>
-          <li>Пиксельное напыление</li>
-          <li>Имитация натуральных волосков</li>
-          <li>Пудровые брови</li>
-        </ul><a class="btn" href="">Бесплтаная консультация</a>
-      </div><img class="services__pic" src="/static/img/service.png" alt=""/>
-    </div>
-  </section>
-  <section class="master"></section>
-  <section class="wrapper form">
-    <h2>Спешите записаться на процедуру перманентного макияжа <small class="hero__title--price">со скидкой 20%</small></h2>
-    <form>
-      <input type="text" placeholder="Ваше имя*"/>
-      <input type="text" placeholder="Номер телефона*"/>
-      <button>Хочу записаться</button>
-    </form>
-  </section>
-  <section class="map">
-    <div class="contact"><img src="/static/img/logo2.png" alt=""/>
-      <h2 class="contact__title">Контакты</h2><a class="btn" href="#">Заказать звонок</a>
-    </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1887.163289855751!2d37.592788378851466!3d55.77191168301347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a3c45eb0523%3A0x95ee835c3b3dd5d6!2zMi3RjyDQotCy0LXRgNGB0LrQsNGPLdCv0LzRgdC60LDRjyDRg9C7LiwgMTgsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMjUwNDc!5e0!3m2!1sru!2s!4v1538732818875" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="allowfullscreen"></iframe>
-  </section>
-  <footer class="wrapper footer">
-    <p class="footer__text"> Copyright © 2018 Перманентный макияж в студии Diamond Style Tattoo</p>
-  </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="/static/js/main.js"></script>

@@ -5,30 +5,15 @@
 	display -o-flex
 	display flex
 	justify-content space-between
-	flex-wrap wrap
 	align-items flex-end
+	&__logo
+		padding-top 7px
 	&__adress
-		position relative
-		&:before
-			content ''
-			display block
-			width 22px
-			height 31px
-			position absolute
-			left -31px
-			top 5px
-			background url(../img/gtag.png)
+		background: url(../img/gtag.png) 0px 7px no-repeat
+		padding: 0px 0px 0px 40px;
 		&--info
-			position relative
-			&:before
-				content ' '
-				display block
-				width 37px
-				height 31px
-				position absolute
-				left -47px
-				top 5px
-				background url(../img/subway.png)
+			background: url(../img/subway.png) 0px 7px no-repeat
+			padding: 0px 0px 0px 45px;
 	&__phone
 		&--number 
 			text-decoration none
@@ -74,14 +59,14 @@
 			background url(../img/inst.png)
 
 .btn
+	display inline-block
+	text-align center
 	font-family: 'Proxima Nova Sm'
 	text-transform uppercase
 	color #fff
 	font-size 16px
-	line-height 48px
 	padding 12px 18px
 	border-radius 5px
-	text-decoration none
 	background #3aaa9b
 	background linear-gradient(145deg, #41aea1, #0d998d)
 	

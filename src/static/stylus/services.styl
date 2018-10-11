@@ -1,37 +1,35 @@
 .services
-	text-align center
 	&__title--main
+		text-align center
 		font-size 44px
 		line-height 24px
 		font-family 'Gotham Pro'
-		margin-bottom 75px
+		margin-bottom 90px
 		position relative
 		&:after
 			content ' '
-			left 185px
-			top 48px
-			width 795px
+			left 100px
+			top 56px
+			width 975px
 			border 3px solid #af8554
 			border-bottom none
-			height 48px
+			height 56px
 			position absolute
 	&__items
+		box-shadow 0 0 10px rgba(0,0,0,.3)
+		position relative
 		display -webkit-flex
 		display -moz-flex
 		display -ms-flex
 		display -o-flex
 		display flex
-		justify-content space-between
-		margin 0 100px
-		margin-bottom 30px
-		box-shadow 0 0 10px rgba(0,0,0,.3)
-		position relative
+		margin-bottom 32px
 		&:before
 			content ' '
 			background: #af8554
 			width 3px
 			height 30px
-			left 85px
+			left 98px
 			position absolute
 			bottom -30px
 		&:after
@@ -39,15 +37,48 @@
 			background: #af8554
 			width 3px
 			height 30px
-			right 85px
+			right 100px
 			position absolute
 			bottom -30px
 		&:last-child
 			margin-bottom 90px
+		&--last:before
+			content ' '
+			background: #af8554
+			width 970px
+			height 3px
+			right 100px
+			position absolute
+			bottom -30px
+	&__pic
+		width 587px
+		height 590px
+	&__pic--item1
+		background url(../img/service1.jpg)
+		background-position center
+	&__pic--item2
+		background url(../img/service2.jpg)
+		background-position center
+	&__pic--item3
+		background url(../img/service3.jpg)
+		background-position center
+	&__pic--item4
+		background url(../img/service4.jpg)
+		background-position center
+	&__pic--item5
+		background url(../img/service5.jpg)
+		background-position center
+	&__pic--item6
+		background url(../img/service6.jpg)
+		background-position -237px 0px
+	&__pic--item7
+		background url(../img/service7.jpg)
+		background-position center
 	&__text
-		text-align left
 		color #404040
-		padding-left 100px
+		width 50%
+	&__text--wrapper
+		padding 0 0 0 100px
 	&__title
 		font-family 'Gotham Pro'
 		font-size 30px
@@ -58,27 +89,24 @@
 		&:before
 			content ' '
 			background: #af8554
-			width 80px
+			width 75px
 			height 3px
 			position absolute
-			bottom -40px
+			left 8px
+			bottom -32px
 	&__list
-		padding-left 18px
+		padding-left 30px
+		padding-right 10px
 		font-size 18px
 		font-family 'Proxima Nova Sm'
-		list-style none
 		& li
 			padding-bottom 8px
+			padding-left 8px
 		& li:before
 			content "•"
 			color #109a8c
-			font-size 24px
+			font-size 36px
+			line-height 0
 			display inline-block
 			width 1em
 			margin-left -1em
-	&__pic
-		width 484px
-		height 484px
-		
-.right
-	padding-right 100px !important

@@ -1,53 +1,66 @@
 .our-works
-	display -webkit-flex
-	display -moz-flex
-	display -ms-flex
-	display -o-flex
-	display flex
-	justify-content space-between
-	padding-top 90px
-	padding-bottom 90px
+	margin-bottom 90px
+	&__wrapper
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-between
 	&__slider
-		margin auto
-		margin-right 90px
+		width 530px
+		height 530px
+		margin-right 66px
+	&__tab li
+		font-family 'Proxima Nova Sm'
+		font-size 18px
+		margin-bottom 16px
+		padding 7px 26px
+		border 3px solid #af8554
+		text-transform uppercase
+		color #af8554
+		cursor pointer
+		border-radius 4 px
+		margin-right 14px
+		display inline-block
+	&__tab--active
+		background #af8554
+		color #fff !important
 	&__desc
-		margin-top 90px
+		border 3px solid #af8554
+		border-left none
+		background url(../img/logo3.png) 420px 60px no-repeat
 	&__title
 		color #0b998d
 		font-size 30px
 		line-height 30px
 		font-weight normal
 		position relative
+		padding-top 14px
 		&:before
 			content: '';
 			background: #af8554;
 			width: 70px;
 			height: 3px;
 			position: absolute;
-			bottom: -40px;
+			bottom: -47px;
 	&__sub-title
 		color #404040
+		font-family 'Gotham Pro'
 		font-size 44px
 		line-height 24px
-		padding-top 40px
+		padding-top 64px
 	&__text
-		margin-right 90px
+		max-width 470px
+		padding-top 12px
 		font-style 18px
 		line-height 24px
 
-.slider__tabs
-	list-style none
-	padding 0
-	& li
-		display inline-block
-		color #c5a96f
-		font-family 'Proxima Nova Sm'
-		font-size 18px
-		border 1px solid #c5a96f
-		border-radius 3px
-		padding 6px 11px
-		margin-right 20px
-		cursor pointer
-	&--active
-		color #fff !important
-		background #c5a96f
+
+
+
+@media (max-width: 760px)
+	.our-works__slider
+		width 100%
+	.our-works
+		flex-direction: column;

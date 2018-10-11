@@ -5,68 +5,46 @@
 	display -o-flex
 	display flex
 	&__photo
-		width 49%
+		padding-right 70px
 	&__desc
-		width 49%
-		position relative
-		&:before
-			content ' '
-			display block
-			width 3px
-			height 445px;
-			position absolute
-			right 0
-			top 125px;
-			background #af8554
-		&:after
-			content ' '
-			display block
-			width 530px
-			height 3px
-			position absolute
-			right 0
-			bottom 80px
-			background #af8554
+		border-bottom 3px solid #af8554
+		border-right 3px solid #af8554
+		padding-bottom 95px
+		padding-left 22px
 	&__title
 		color #109a8c
 		font-size 30px
 		line-height 24px
 		font-weight normal
 		position relative
+		padding-top 57px
+		padding-left 24px
 		&:before
 			content: '';
 			background: #af8554;
 			width: 120px;
 			height: 3px;
 			position: absolute;
-			bottom: -30px;
+			bottom: -43px;
 	&__sub-title
+		font-family 'Gotham Pro'
 		color #404040
 		font-size 44px
 		line-height 24px
-		padding-top 20px
+		padding-top: 42px;
 	&__text
 		font-size 18px
 		line-height 24px
 		padding-right 120px
 	&__list
-		display -webkit-flex
-		display -moz-flex
-		display -ms-flex
-		display -o-flex
-		display flex
-		justify-content flex-start
 		padding 0
 		& li
-			margin-right 60px
+			display inline-block
+			margin-right 25px
 			font-family 'Proxima Nova Sm'
-			&:before
-				content ''
-				background url(../img/dot.png)
-				width 13px
-				height 13px
-				margin-right 8px
-				display inline-block
+			padding-left 20px
+			font-size 20px
+			background url(../img/dot.png) 4px 4px no-repeat
 
 
 	&__futures
@@ -94,6 +72,16 @@
 
 
 
-
+@media (max-width: 760px)
+	.about
+		flex-direction column
+	.about__photo
+		display none
+	.about__desc
+		width 100%
+	.about__futures
+		flex-direction column
+	.about__text
+		padding-right 5px
 
 
