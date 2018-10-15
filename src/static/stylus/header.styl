@@ -39,13 +39,19 @@
 	&__list
 		& li
 			display inline-block
-			padding-right 22px
+			margin-left: 49px;
 		& a
 			color #343434
+			
+			&:hover
+				color #3aaa9b
+				transition .3s
+				border-bottom 1px solid #3aaa9b 
 	&__soc
-		margin-right 21px
+		margin-right 6px
 		& li
 			display inline-block
+			margin-right 15px
 		& a
 			display inline-block
 			border-radius 24px
@@ -66,20 +72,31 @@
 	color #fff
 	font-size 16px
 	padding 12px 18px
+	border 3px solid #3aaa9b
 	border-radius 5px
 	background #3aaa9b
 	background linear-gradient(145deg, #41aea1, #0d998d)
 	
+	&:hover
+		color #3aaa9b
+		background #fff
+		border 3px solid #3aaa9b
+		transition .5s
+	
 @media (max-width: 760px)
+
 	.header
-		flex-direction: column;
-		align-items: center;
-		padding: 10px;
+		flex-direction column
+		align-items center
+		padding 10px
+		
 	.header__logo
 		margin-bottom 10px
+		
 	.header__adress, .header__adress--info
 		margin-bottom 10px
 	.menu
+		
 		flex-direction column
 		text-align center
 		

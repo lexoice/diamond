@@ -2,7 +2,7 @@
 <html lang="en"></html>
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>Главная старница</title>
   <link rel="stylesheet" href="static/css/main.css"/>
   <link rel="stylesheet" href="static/fonts/Gotham Cyrillic/font.css"/>
@@ -23,14 +23,14 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="menu__soc">
-        <li><a class="menu__soc--inst" href="https://facebook.com"> </a></li>
-        <li><a class="menu__soc--fb" href="https://vk.com"> </a></li>
-        <li><a class="menu__soc--vk" href="https://vk.com"> </a></li>
+        <li><a class="menu__soc--inst" href="https://www.instagram.com/diamondtattoo_ru/" target="blank"> </a></li>
+        <li><a class="menu__soc--fb" href="https://facebook.com/diamondstyletattoo/" target="blank"> </a></li>
+        <li><a class="menu__soc--vk" href="https://vk.com/diamondstyletattoo" target="blank"> </a></li>
       </ul>
     </nav>
     <div class="hero">
       <div class="hero__desc">
-        <h1 class="hero__title"><span class="hero__title--sub">Перманентный макияж </span><b>безупречного качества в Москве </b><span class="hero__title--price">от 3000 р.</span></h1>
+        <h1 class="hero__title"><span class="hero__title--sub">Перманентный макияж </span><span class="hero__title--sub2">безупречного качества в Москве </span><span class="hero__title--price">от 3000 р.</span></h1>
         <p class="hero__text">Работаем профессионально со всеми и индивидуально с каждым</p>
         <ul class="hero__items">
           <li class="hero__item hero__ico1">Идеальный <br> макияж на 2 года</li>
@@ -39,45 +39,57 @@
         </ul><a class="hero__btn btn" href="#">Записаться на консультацию</a>
       </div>
     </div>
-    <section class="about" id="about">
-      <div class="about__photo"><img src="static/img/l.jpg" alt=""/></div>
-      <div class="about__wrapper">
-        <h3 class="about__title">Нам доверяют звезды ТВ!</h3>
-        <div class="about__desc">
-          <h2 class="about__sub-title">О компании</h2>
-          <ul class="about__list">
-            <li>Безупречно</li>
-            <li>Безопасно</li>
-            <li>Качественно</li>
-          </ul>
-          <p class="about__text">Студия Diamond Tattoo Studio в Москве приглашает вас на люксовый, безболезненный, безопасный, максимально натуральный и стойкий перманентный макияж.<br> Лидия Садчикова - руководитель студии с опытом работы более 8 лет, имеет высшее медицинское образование. участник чемпионатов, призер, преподаватель, член Лиги профессионалов, опыт работы Лидии и отзывы клиентов говорят сами за себя. Нам доверяют даже звезды ТВ!</p>
+    <div class="wrapper-color">
+      <div class="wrapper">
+        <section class="about" id="about">
+          <div class="about__photo"><img src="static/img/l.jpg" alt=""/></div>
+          <div class="about__wrapper">
+            <h3 class="about__title">Нам доверяют звезды ТВ!</h3>
+            <div class="about__desc">
+              <h2 class="about__sub-title">О компании</h2>
+              <ul class="about__list">
+                <li>Безупречно</li>
+                <li>Безопасно</li>
+                <li>Качественно</li>
+              </ul>
+              <p class="about__text">Студия Diamond Tattoo Studio в Москве приглашает вас на люксовый, безболезненный, безопасный, максимально натуральный и стойкий перманентный макияж.<br> Лидия Садчикова - руководитель студии с опытом работы более 8 лет, имеет высшее медицинское образование. участник чемпионатов, призер, преподаватель, член Лиги профессионалов, опыт работы Лидии и отзывы клиентов говорят сами за себя. Нам доверяют даже звезды ТВ!</p>
+            </div>
+          </div>
+        </section>
+        <ul class="about__futures">
+          <li><strong>8+</strong> лет работы</li>
+          <li><strong>30+</strong> учеников, которые<br> прошли обучение</li>
+          <li><strong>10 000+</strong> успешных работ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <section class="master"></section>
+  <div class="wrapper">
+    <section class="our-works">
+      <div class="tabs">
+        <ul class="our-works__tabs">
+          <li class="active">Брови</li>
+          <li>Глаза</li>
+          <li>Губы</li>
+          <div class="our-works__wrapper active">
+            <div class="our-works__slider">
+              <div class="slider"><img src="/static/img/w.jpg" alt=""/><img src="/static/img/works.jpg" alt=""/><img src="/static/img/works.jpg" alt=""/></div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="our-works__inner">
+        <div class="our-works__desc">
+          <h3 class="our-works__title">Косметология высшего уровня с заботой о вашем здоровье</h3>
+          <h2 class="our-works__sub-title">Наши работы</h2>
+          <p class="our-works__text">Перманентный макияж от Diamond Tattoo Studio — процедура, выполняемая мастерами с медицинским образованием, которая позволяет получить все преимущества декоративного макияжа на несколько лет. Мы подберем для вас идеальное колористическое и декоративное решение. Поэтому перед тем, как определиться с техникой нанесения, учитывайте советы и рекомендации мастера.</p>
         </div>
       </div>
     </section>
-    <ul class="about__futures">
-      <li><strong>8+</strong> лет работы</li>
-      <li><strong>30+</strong> учеников, которые<br> прошли обучение</li>
-      <li><strong>10 000+</strong> успешных работ</li>
-    </ul>
-    <section class="our-works">
-      <ul class="our-works__tab">
-        <li>Брови</li>
-        <li>Глаза</li>
-        <li class="our-works__tab--active">Губы</li>
-        <div class="our-works__wrapper">
-          <div class="our-works__slider">
-            <div class="slider"><img src="/static/img/w.jpg" alt=""/><img src="/static/img/works.jpg" alt=""/><img src="/static/img/works.jpg" alt=""/></div>
-          </div>
-          <div class="our-works__desc">
-            <h3 class="our-works__title">Косметология высшего уровня с заботой о вашем здоровье</h3>
-            <h2 class="our-works__sub-title">Наши работы</h2>
-            <p class="our-works__text">Перманентный макияж от Diamond Tattoo Studio — процедура, выполняемая мастерами с медицинским образованием, которая позволяет получить все преимущества декоративного макияжа на несколько лет. Мы подберем для вас идеальное колористическое и декоративное решение. Поэтому перед тем, как определиться с техникой нанесения, учитывайте советы и рекомендации мастера.</p>
-          </div>
-        </div>
-      </ul>
-    </section>
     <section class="features">
-      <div class="features__wrapper"><img class="features__img" src="/static/img/logo2.png" alt=""/>
+      <div class="features__wrapper">
+        <div class="features__img__wrap"><img class="features__img" src="/static/img/logo2.png" alt=""/></div>
         <h2 class="features__title">Основные преимущества <br>перманентного макияжа</h2>
         <ul class="features__list">
           <li class="features__item1">Реальная альтернатива «люксовым» продуктам для макияжа. <br> Татуаж выглядит очень естественно и «дорого»</li>
@@ -201,6 +213,9 @@
         <div class="services__pic services__pic--item7"></div>
       </div>
     </section>
+  </div>
+  <section class="master"></section>
+  <div class="wrapper">
     <section class="education">
       <div class="education__wrap">
         <div class="education__inner">
@@ -208,7 +223,7 @@
           <h3 class="education__sub-title">Здесь подзаголовок</h3>
           <p class="education__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim culpa quo pariatur, at nisi earum laboriosam facilis sint hic dignissimos repudiandae fuga et! Maiores ipsam provident esse nobis vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sit debitis, expedita a repudiandae ab harum labore reprehenderit temporibus, impedit quaerat aut, et voluptate veniam nostrum ex consequatur, deleniti sint.</p>
         </div>
-        <div class="education__pic"><img src="/static/img/edu-pic.jpg" alt=""/></div>
+        <div class="education__pic"><img class="education__pic--main" src="/static/img/edu-pic.jpg" alt=""/></div>
       </div>
     </section>
     <section class="education__items">
@@ -321,12 +336,12 @@
       </form>
     </section>
   </div>
-  <section class="map">
+  <section class="map wrapper">
     <div class="contact"><img src="/static/img/logo2.png" alt=""/>
-      <h2 class="contact__title">Контакты</h2><a class="btn" href="#">Заказать звонок</a>
+      <h2 class="contact__title">Контакты</h2><span class="contact__sub-title">Наш адрес</span><span class="contact__info">г. Москва, ул. 2-я Тверская-Ямская, д. 18 <br> “Деловой Центр”, офис 606-607</span><span class="contact__sub-title">Телефон для записи:</span><span class="contact__info nomer">+7 968 49 49 452</span><span class="contact__btn-info">Хотите мы сами перезвоним вам?</span><a class="btn contact__btn" href="#">Заказать  звонок</a>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1887.163289855751!2d37.592788378851466!3d55.77191168301347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a3c45eb0523%3A0x95ee835c3b3dd5d6!2zMi3RjyDQotCy0LXRgNGB0LrQsNGPLdCv0LzRgdC60LDRjyDRg9C7LiwgMTgsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMjUwNDc!5e0!3m2!1sru!2s!4v1538732818875" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="allowfullscreen"></iframe>
   </section>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1887.163289855751!2d37.592788378851466!3d55.77191168301347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a3c45eb0523%3A0x95ee835c3b3dd5d6!2zMi3RjyDQotCy0LXRgNGB0LrQsNGPLdCv0LzRgdC60LDRjyDRg9C7LiwgMTgsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMjUwNDc!5e0!3m2!1sru!2s!4v1538732818875" width="100%" height="595" frameborder="0" style="border:0;" allowfullscreen="allowfullscreen"></iframe>
   <footer class="wrapper footer">
     <p class="footer__text"> Copyright © 2018 Перманентный макияж в студии Diamond Style Tattoo</p>
   </footer>

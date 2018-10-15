@@ -18,12 +18,14 @@
 			height 3px
 			position absolute
 			bottom -20px
+			
 		&--sub
 			font-weight 800
 			font-size 44px
 			line-height 48px
-		& b
-			font-weight normal
+		&--sub2
+			font-weight 400
+			font-size 42px
 		&--price
 			color #109a8c
 			font-size 50px
@@ -72,14 +74,25 @@
 
 @media (max-width: 760px)
 	.hero
-		padding-left 10px
-		margin-bottom: 205px;
+		background url(../img/hero.png) left no-repeat
+		margin-bottom: 150px;
+		&__desc
+			margin 0 15px
+		&__title
+			padding-top 20px
+			text-align center
+			&:before
+				width 100%
+				left 0
+			&--price
+				display block
+		&__text
+			text-align center
 	.hero__btn
 		margin-bottom 10px
 		text-align center
 	.hero__items
-		margin-top 80px
 		flex-direction column
 		justify-content center
-	.hero__item
-		width 100%
+	.menu__list li
+		margin-left 0

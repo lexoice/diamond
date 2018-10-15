@@ -1,5 +1,10 @@
 .our-works
 	margin-bottom 90px
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
 	&__wrapper
 		display -webkit-flex
 		display -moz-flex
@@ -11,7 +16,7 @@
 		width 530px
 		height 530px
 		margin-right 66px
-	&__tab li
+	&__tabs li
 		font-family 'Proxima Nova Sm'
 		font-size 18px
 		margin-bottom 16px
@@ -30,6 +35,7 @@
 		border 3px solid #af8554
 		border-left none
 		background url(../img/logo3.png) 420px 60px no-repeat
+		padding-bottom 60px
 	&__title
 		color #0b998d
 		font-size 30px
@@ -53,10 +59,10 @@
 	&__text
 		max-width 470px
 		padding-top 12px
-		font-style 18px
+		font-size 18px
 		line-height 24px
-
-
+	&__inner
+		margin-top: 58px;
 
 
 @media (max-width: 760px)
@@ -64,3 +70,13 @@
 		width 100%
 	.our-works
 		flex-direction: column;
+	.our-works__tabs li
+		width 100%
+		text-align center
+	.our-works__desc
+		border-left 3px solid #af8554
+		padding-bottom 0
+	.our-works__text
+		padding 15px
+	.our-works__sub-title
+		padding-top 40px

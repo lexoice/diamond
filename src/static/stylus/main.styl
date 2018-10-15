@@ -1,12 +1,16 @@
 @import normalize
 @import font
 
+*
+	box-sizing: border-box;
+
 body 
 	font-family 'Proxima Nova', sans-serif
 	font-size 16px
 	line-height 22px
 	background #fff
 	color #4f5656
+	box-sizing border-box
 ul
 	padding 0
 	margin 0
@@ -15,9 +19,34 @@ a
 	text-decoration none
 p
 	font-weight normal
+
+section
+	margin-left 15px
+	margin-right 15px
 .wrapper
 	max-width 1170px
 	margin 0 auto
+	overflow hidden
+
+.wrapper-color
+	background #f9f9f9
+	
+.master
+	background url(../img/pl.jpg) no-repeat center
+	min-height 247px
+	margin-bottom 90px
+
+
+@media (max-width: 760px)
+	.master
+		display none
+	h2, h3
+		text-align center
+	h2
+		line-height 44px !important
+	.btn
+		width 100%
+		
 
 @import header
 @import hero

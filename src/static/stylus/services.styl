@@ -95,18 +95,29 @@
 			left 8px
 			bottom -32px
 	&__list
-		padding-left 30px
+		padding-left 15px
 		padding-right 10px
 		font-size 18px
 		font-family 'Proxima Nova Sm'
 		& li
 			padding-bottom 8px
-			padding-left 8px
-		& li:before
-			content "•"
-			color #109a8c
-			font-size 36px
-			line-height 0
-			display inline-block
-			width 1em
-			margin-left -1em
+			padding-left 20px
+			background url(../img/round.png) 0 6px  no-repeat
+			
+
+@media (max-width: 760px)
+	.services__items
+		flex-direction column
+	.services__pic
+		width 100%
+	.services
+		&__title--main
+			&:after
+				display none
+	.services__text
+		width 100%
+	.services__text--wrapper
+		padding 10px
+	.services__list
+		padding-left 15px
+		padding-right 15px
